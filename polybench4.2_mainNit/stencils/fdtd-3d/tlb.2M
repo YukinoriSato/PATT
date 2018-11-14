@@ -1,0 +1,53 @@
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2680 0 @ 2.70GHz
+CPU type:	Intel Xeon SandyBridge EN/EP processor
+CPU clock:	2.70 GHz
+--------------------------------------------------------------------------------
+interPadd 0  org, padded = 7f973d600000 7f973d600000
+interPadd 0  org, padded = 7f9745600000 7f9745600000
+interPadd 0  org, padded = 7f974d600000 7f974d600000
+interPadd 0  org, padded = 7f9755600000 7f9755600000
+interPadd 0  org, padded = 7f975d600000 7f975d600000
+interPadd 0  org, padded = 7f9765600000 7f9765600000
+interPadd 0  org, padded = 7f976d600000 7f976d600000
+interPadd 0  org, padded = 7f9771600000 7f9771600000
+interPadd 0  org, padded = 7f9771800000 7f9771800000
+interPadd 0  org, padded = 7f9771a00000 7f9771a00000
+interPadd 0  org, padded = 7f9771c00000 7f9771c00000
+interPadd 0  org, padded = 7f9771e00000 7f9771e00000
+interPadd 0  org, padded = 7f9772000000 7f9772000000
+interPadd 0  org, padded = 7f9772200000 7f9772200000
+interPadd 0  org, padded = 7f9772400000 7f9772400000
+interPadd 0  org, padded = 7f9772600000 7f9772600000
+interPadd 0  org, padded = 7f9772800000 7f9772800000
+interPadd 0  org, padded = 7f9772a00000 7f9772a00000
+interPadd 0  org, padded = 7f9772c00000 7f9772c00000
+interPadd 0  org, padded = 7f9772e00000 7f9772e00000
+interPadd 0  org, padded = 7f9773000000 7f9773000000
+interPadd 0  org, padded = 7f9773200000 7f9773200000
+kernel_time  114.239360 [s]
+--------------------------------------------------------------------------------
+Group 1: TLB
++---------------------------------+---------+--------------+
+|              Event              | Counter |    Core 31   |
++---------------------------------+---------+--------------+
+|        INSTR_RETIRED_ANY        |  FIXC0  |  71233167650 |
+|      CPU_CLK_UNHALTED_CORE      |  FIXC1  | 308047803335 |
+|       CPU_CLK_UNHALTED_REF      |  FIXC2  | 308047859514 |
+|  DTLB_LOAD_MISSES_CAUSES_A_WALK |   PMC0  |  11009032135 |
+| DTLB_STORE_MISSES_CAUSES_A_WALK |   PMC1  |   893277430  |
+|  DTLB_LOAD_MISSES_WALK_DURATION |   PMC2  | 140870361352 |
+| DTLB_STORE_MISSES_WALK_DURATION |   PMC3  |  11192358819 |
++---------------------------------+---------+--------------+
+
++----------------------------+-------------+
+|           Metric           |   Core 31   |
++----------------------------+-------------+
+|     Runtime (RDTSC) [s]    |   114.6391  |
+|    Runtime unhalted [s]    |   114.0869  |
+|         Clock [MHz]        |  2700.1160  |
+|             CPI            |    4.3245   |
+|       L1 DTLB misses       | 11902309565 |
+| L1 DTLB miss per kilo inst |   167.0894  |
++----------------------------+-------------+
+

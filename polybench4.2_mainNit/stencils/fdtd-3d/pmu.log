@@ -1,0 +1,173 @@
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2680 0 @ 2.70GHz
+CPU type:	Intel Xeon SandyBridge EN/EP processor
+CPU clock:	2.70 GHz
+--------------------------------------------------------------------------------
+interPadd 0  org, padded = 7f254d400000 7f254d400000
+interPadd 0  org, padded = 7f2555400000 7f2555400000
+interPadd 0  org, padded = 7f255d400000 7f255d400000
+interPadd 0  org, padded = 7f2565400000 7f2565400000
+interPadd 0  org, padded = 7f256d400000 7f256d400000
+interPadd 0  org, padded = 7f2575400000 7f2575400000
+interPadd 0  org, padded = 7f257d400000 7f257d400000
+interPadd 0  org, padded = 7f2581400000 7f2581400000
+interPadd 0  org, padded = 7f2581600000 7f2581600000
+interPadd 0  org, padded = 7f2581800000 7f2581800000
+interPadd 0  org, padded = 7f2581a00000 7f2581a00000
+interPadd 0  org, padded = 7f2581c00000 7f2581c00000
+interPadd 0  org, padded = 7f2581e00000 7f2581e00000
+interPadd 0  org, padded = 7f2582000000 7f2582000000
+interPadd 0  org, padded = 7f2582200000 7f2582200000
+interPadd 0  org, padded = 7f2582400000 7f2582400000
+interPadd 0  org, padded = 7f2582600000 7f2582600000
+interPadd 0  org, padded = 7f2582800000 7f2582800000
+interPadd 0  org, padded = 7f2582a00000 7f2582a00000
+interPadd 0  org, padded = 7f2582c00000 7f2582c00000
+interPadd 0  org, padded = 7f2582e00000 7f2582e00000
+interPadd 0  org, padded = 7f2583000000 7f2583000000
+kernel_time  113.362066 [s]
+--------------------------------------------------------------------------------
+Group 1: NEW
++-------------------------+---------+--------------+
+|          Event          | Counter |    Core 31   |
++-------------------------+---------+--------------+
+|    INSTR_RETIRED_ANY    |  FIXC0  |  87021499475 |
+|  CPU_CLK_UNHALTED_CORE  |  FIXC1  | 305855539072 |
+|   CPU_CLK_UNHALTED_REF  |  FIXC2  | 305855601318 |
+|  MEM_UOPS_RETIRED_LOADS |   PMC0  |  50091396203 |
+|     L1D_REPLACEMENT     |   PMC1  |  6487801772  |
+|      L2_RQSTS_MISS      |   PMC2  |  2532127220  |
+| MEM_UOPS_RETIRED_STORES |   PMC3  |  5048816387  |
++-------------------------+---------+--------------+
+
++----------------------+-------------+
+|        Metric        |   Core 31   |
++----------------------+-------------+
+|  Runtime (RDTSC) [s] |   113.8174  |
+| Runtime unhalted [s] |   113.2749  |
+|      Clock [MHz]     |  2700.1180  |
+|          CPI         |    3.5147   |
+|     L1 miss ratio    |    0.1177   |
+|        memref        | 55140212590 |
+|     L1 BW [GB/s]     |    3.8757   |
+|     L2 BW [GB/s]     |    3.6481   |
++----------------------+-------------+
+
+interPadd 0  org, padded = 7f0545a00000 7f0545a00000
+interPadd 0  org, padded = 7f054da00000 7f054da00000
+interPadd 0  org, padded = 7f0555a00000 7f0555a00000
+interPadd 0  org, padded = 7f055da00000 7f055da00000
+interPadd 0  org, padded = 7f0565a00000 7f0565a00000
+interPadd 0  org, padded = 7f056da00000 7f056da00000
+interPadd 0  org, padded = 7f0575a00000 7f0575a00000
+interPadd 0  org, padded = 7f0579a00000 7f0579a00000
+interPadd 0  org, padded = 7f0579c00000 7f0579c00000
+interPadd 0  org, padded = 7f0579e00000 7f0579e00000
+interPadd 0  org, padded = 7f057a000000 7f057a000000
+interPadd 0  org, padded = 7f057a200000 7f057a200000
+interPadd 0  org, padded = 7f057a400000 7f057a400000
+interPadd 0  org, padded = 7f057a600000 7f057a600000
+interPadd 0  org, padded = 7f057a800000 7f057a800000
+interPadd 0  org, padded = 7f057aa00000 7f057aa00000
+interPadd 0  org, padded = 7f057ac00000 7f057ac00000
+interPadd 0  org, padded = 7f057ae00000 7f057ae00000
+interPadd 0  org, padded = 7f057b000000 7f057b000000
+interPadd 0  org, padded = 7f057b200000 7f057b200000
+interPadd 0  org, padded = 7f057b400000 7f057b400000
+interPadd 0  org, padded = 7f057b600000 7f057b600000
+kernel_time  114.577644 [s]
+[1;34m[likwid-pin] Main PID -> core 31 - OK[0m
+
+ EXEC  : instructions per nominal CPU cycle
+ IPC   : instructions per CPU cycle
+ FREQ  : relation to nominal CPU frequency='unhalted clock ticks'/'invariant timer ticks' (includes Intel Turbo Boost)
+ AFREQ : relation to nominal CPU frequency while in active state (not in power-saving C state)='unhalted clock ticks'/'invariant timer ticks while in C0-state'  (includes Intel Turbo Boost)
+ L3MISS: L3 cache misses 
+ L2MISS: L2 cache misses (including other core's L2 cache *hits*) 
+ L3HIT : L3 cache hit ratio (0.00-1.00)
+ L2HIT : L2 cache hit ratio (0.00-1.00)
+ L3MPI : number of L3 cache misses per instruction
+ L2MPI : number of L2 cache misses per instruction
+ READ  : bytes read from memory controller (in GBytes)
+ WRITE : bytes written to memory controller (in GBytes)
+ TEMP  : Temperature reading in 1 degree Celsius relative to the TjMax temperature (thermal headroom): 0 corresponds to the max temperature
+ energy: Energy in Joules
+
+
+ Core (SKT) | EXEC | IPC  | FREQ  | AFREQ | L3MISS | L2MISS | L3HIT | L2HIT | L3MPI | L2MPI | TEMP
+
+   0    0     0.00   0.26   0.00    0.74     193 K    583 K    0.67    0.09    0.01    0.02     63
+   1    0     0.00   0.23   0.00    0.82     157 K    528 K    0.70    0.22    0.00    0.01     63
+   2    0     0.00   0.22   0.00    0.79     114 K    286 K    0.60    0.09    0.01    0.02     66
+   3    0     0.00   0.21   0.00    0.68     145 K    356 K    0.59    0.08    0.01    0.02     68
+   4    0     0.00   0.15   0.00    0.63     226 K    426 K    0.47    0.10    0.01    0.02     61
+   5    0     0.00   0.21   0.00    0.73     130 K    286 K    0.54    0.07    0.01    0.02     66
+   6    0     0.00   0.18   0.00    0.76     137 K    247 K    0.45    0.05    0.02    0.03     66
+   7    0     0.00   0.18   0.00    0.68     140 K    250 K    0.44    0.06    0.02    0.03     64
+   8    1     0.00   0.16   0.00    1.00    1448 K   1732 K    0.16    0.09    0.02    0.03     62
+   9    1     0.00   0.15   0.00    1.00    2538 K   3083 K    0.18    0.09    0.03    0.03     63
+  10    1     0.00   0.37   0.00    1.00     767 K   1043 K    0.26    0.08    0.01    0.01     67
+  11    1     0.00   0.16   0.00    1.00     256 K    392 K    0.34    0.05    0.02    0.03     66
+  12    1     0.00   0.16   0.00    1.00     245 K    369 K    0.34    0.05    0.02    0.03     64
+  13    1     0.00   0.16   0.00    1.00     212 K    322 K    0.34    0.04    0.02    0.04     62
+  14    1     0.00   0.14   0.00    1.00     585 K    739 K    0.21    0.06    0.03    0.03     65
+  15    1     0.00   0.19   0.00    0.98     397 K    537 K    0.26    0.16    0.03    0.05     63
+  16    0     0.00   0.72   0.00    0.81     164 K    427 K    0.61    0.39    0.00    0.01     63
+  17    0     0.00   0.29   0.00    0.83     224 K    821 K    0.73    0.22    0.00    0.01     63
+  18    0     0.00   0.31   0.00    0.75     148 K    367 K    0.60    0.10    0.01    0.02     66
+  19    0     0.00   0.29   0.00    0.66     154 K    359 K    0.57    0.08    0.01    0.02     67
+  20    0     0.00   0.42   0.00    0.64     494 K   1257 K    0.61    0.17    0.00    0.01     61
+  21    0     0.00   0.28   0.00    0.71     129 K    238 K    0.46    0.06    0.02    0.03     66
+  22    0     0.00   0.28   0.00    0.73     146 K    259 K    0.43    0.06    0.02    0.03     66
+  23    0     0.00   0.28   0.00    0.69     146 K    256 K    0.43    0.05    0.02    0.03     64
+  24    1     0.00   0.31   0.00    1.00     590 K    835 K    0.29    0.33    0.01    0.01     62
+  25    1     0.00   0.38   0.00    1.00    1938 K   2672 K    0.27    0.17    0.01    0.01     63
+  26    1     0.00   0.21   0.00    0.99     317 K    462 K    0.31    0.08    0.02    0.02     67
+  27    1     0.00   0.25   0.00    1.00     259 K    412 K    0.37    0.06    0.02    0.03     65
+  28    1     0.00   0.22   0.00    1.00     220 K    304 K    0.28    0.04    0.03    0.04     64
+  29    1     0.00   0.23   0.00    1.00     216 K    298 K    0.27    0.04    0.03    0.04     62
+  30    1     0.00   0.16   0.00    1.00    1738 K   2011 K    0.14    0.06    0.03    0.04     65
+  31    1     0.28   0.28   0.99    1.00    1355 M   2234 M    0.39    0.60    0.02    0.03     63
+---------------------------------------------------------------------------------------------------------------
+ SKT    0     0.00   0.30   0.00    0.73    2854 K   6954 K    0.59    0.15    0.01    0.02     61
+ SKT    1     0.02   0.28   0.06    1.00    1367 M   2249 M    0.39    0.59    0.02    0.03     62
+---------------------------------------------------------------------------------------------------------------
+ TOTAL  *     0.01   0.28   0.03    1.00    1369 M   2256 M    0.39    0.59    0.02    0.03     N/A
+
+f 2.70
+L3  bandwidth [GB/s]  1.24
+Mem bandwidth [GB/s]  0.75
+
+
+ Instructions retired:   88 G ; Active cycles:  315 G ; Time (TSC):  313 Gticks ; C0 (active,non-halted) core residency: 3.15 %
+
+ C1 core residency: 3.33 %; C3 core residency: 0.03 %; C6 core residency: 0.00 %; C7 core residency: 93.48 %;
+ C2 package residency: 0.00 %; C3 package residency: 0.00 %; C6 package residency: 0.00 %; C7 package residency: 0.00 %;
+
+ PHYSICAL CORE IPC                 : 0.56 => corresponds to 14.05 % utilization for cores in active state
+ Instructions per nominal CPU cycle: 0.02 => corresponds to 0.44 % core utilization over time interval
+
+Intel(r) QPI data traffic estimation in bytes (data traffic coming to CPU/socket through QPI links):
+
+              | 
+---------------------------------------------------------------------------------------------------------------
+ SKT    0     |  
+ SKT    1     |  
+---------------------------------------------------------------------------------------------------------------
+Total QPI incoming data traffic:    0       QPI data traffic/Memory controller traffic: 0.00
+
+Intel(r) QPI traffic estimation in bytes (data and non-data traffic outgoing from CPU/socket through QPI links):
+
+              | 
+---------------------------------------------------------------------------------------------------------------
+ SKT    0     |  
+ SKT    1     |  
+---------------------------------------------------------------------------------------------------------------
+Total QPI outgoing data and non-data traffic:    0  
+
+          |  READ |  WRITE | CPU energy | DIMM energy
+---------------------------------------------------------------------------------------------------------------
+ SKT   0     1.40     0.95     2071.97       0.00
+ SKT   1    81.50    38.91     3404.68       0.00
+---------------------------------------------------------------------------------------------------------------
+       *    82.90    39.86     5476.65       0.00
