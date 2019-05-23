@@ -23,7 +23,7 @@ Here, we provide [the Japanese version of this document](README-j.md).
 
 # Overview
 
-![Overview](patt_overview.jpg)
+![Overview](PATT_overview.jpg)
 
 
 
