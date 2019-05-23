@@ -1,14 +1,5 @@
 #!/usr/bin/env python
 
-# /******************************************************************
-# PATT: Polyhedral compilation-based AuTo Tile size optimizer
-#
-# Copyright (C)   2017-2018,   Yukinori Sato
-# All Rights Reserved. 
-# University of Illinois/NCSA Open Source License
-# ******************************************************************/
-
-
 #utility functions
 
 import subprocess
@@ -28,21 +19,21 @@ def tm_init():
         t=time.time()
         time_prev=t
         time_init=t
-        print "tm_init()"
+        #print "tm_init()"
         return 
 
 
 def tm_other():
         global time_other, time_prev
         t=time.time()
-        print "tm_other %f [s]" % (t-time_prev)
+        #print "tm_other %f [s]" % (t-time_prev)
         time_other=t-time_prev+time_other
         time_prev=t
         return t-time_init
 def tm_build():
         global time_build, time_prev
         t=time.time()
-        print "tm_build %f [s]" % (t-time_prev)
+        #print "tm_build %f [s]" % (t-time_prev)
         time_build=t-time_prev+time_build
         time_prev=t
         return t-time_init
@@ -50,7 +41,7 @@ def tm_build():
 def tm_trial():
         global time_trial, time_prev
         t=time.time()
-        print "tm_trial %f [s]" % (t-time_prev)
+        #print "tm_trial %f [s]" % (t-time_prev)
         time_trial=t-time_prev+time_trial
         time_prev=t
         return t-time_init
@@ -74,7 +65,7 @@ def min(num_list):
 
 def prebuild(c_source_list, cc_options, kernel_file):
         t=tm_other()
-	print('[patt progress] prebuild start %f' % t)
+	#print('[patt progress] prebuild start %f' % t)
 
 	cmd = 'mkdir patt_result/temp/prebuild'
 	subprocess.call(cmd, shell=True)
@@ -96,7 +87,7 @@ def prebuild(c_source_list, cc_options, kernel_file):
 	#subprocess.call(cmd, shell=True)
 
         t=tm_build()
-        print('[patt progress] prebuild end %f'%t)
+        #print('[patt progress] prebuild end %f'%t)
 
 
 def build(polly_additional_passes):
@@ -114,7 +105,7 @@ def build(polly_additional_passes):
 
 def real_build(polly_additional_passes):
         t=tm_other()
-	print('[patt progress] build start %f'%t)
+	#print('[patt progress] build start %f'%t)
 	print('[build] polly_additional_passes: '+polly_additional_passes)
 
 	if os.path.isdir('patt_result/temp/build'):
@@ -170,12 +161,12 @@ def real_build(polly_additional_passes):
 	cmd = 'clang -lgomp -lm -o ./patt_result/temp/build/kernel_polly_exe ./patt_result/temp/build/kernel_polly.o ' + drivers
 	subprocess.call(cmd, shell=True)
         t=tm_build()
-        print('[patt progress] build end %f'%t)
+        #print('[patt progress] build end %f'%t)
 
 
 def make_measure_script(threads):
         t=tm_other()
-	print('[patt progress] make_measure_script start %f'%t)
+	#print('[patt progress] make_measure_script start %f'%t)
 
 	#exe name: kernel_polly_exe
 	last_thread=threads-1
@@ -196,13 +187,13 @@ def make_measure_script(threads):
 	global current_path
 	current_path = std_out_and_err[0].strip()
         t=tm_build()
-        print('[patt progress] make_measure_script end %f'%t)
+        #print('[patt progress] make_measure_script end %f'%t)
 
 
 current_path = ''
 def measure(info, remote, repetition, timeout):
         t=tm_other()
-	print('[patt progress] measure start %f'%t)
+	#print('[patt progress] measure start %f'%t)
 	info['meas_num'] += 1
 	print('[measure] meas_num: ' + str(info['meas_num']))
 	huge_num = 10000
@@ -231,7 +222,7 @@ def measure(info, remote, repetition, timeout):
 			#timeout
 			print('[measure] this_time: '+str(timeout_num))
                         t=tm_trial()
-                        print('[patt progress] measure end0  %f'%t)
+                        #print('[patt progress] measure end0  %f'%t)
 			return timeout_num
 
 		this_time_list_temp = float(std_out_and_err[0].strip())
@@ -247,7 +238,7 @@ def measure(info, remote, repetition, timeout):
 	print('[measure] this_time: '+str(this_time))
 
         t=tm_trial()
-	print('[patt progress] measure end1  %f'%t)
+	#print('[patt progress] measure end1  %f'%t)
 	return this_time
 
 

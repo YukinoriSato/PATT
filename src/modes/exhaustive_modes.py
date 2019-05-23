@@ -1,14 +1,5 @@
 #!/usr/bin/env python
 
-# /******************************************************************
-# PATT: Polyhedral compilation-based AuTo Tile size optimizer
-#
-# Copyright (C)   2017-2018,   Yukinori Sato
-# All Rights Reserved. 
-# University of Illinois/NCSA Open Source License
-# ******************************************************************/
-
-
 import sys
 from util.util import *
 #from util.heatmap_generator import *

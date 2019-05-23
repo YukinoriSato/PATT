@@ -19,7 +19,8 @@ import functools
 
 #----------------------------------------------------------------
 def init_simplex(init_coord, all_list_list):
-	print('[patt progress] init_simplex() start')
+	
+        #print('[patt progress] init_simplex() start')
 	# initialize a right-angled simplex in the search space
 
 
@@ -125,7 +126,7 @@ def mul_coords(coef, coord):
 
 #----------------------------------------------------------------
 def orio_nm_mode(info):
-	print('[patt progress] orio_nm_mode start')
+	#print('[patt progress] orio_nm_mode start')
 
 	prebuild(info['c_source_list'], info['cc_options'], info['kernel_file'])
 	make_measure_script(int(info['threads']))
@@ -193,7 +194,7 @@ def orio_nm_mode(info):
 	simplex_it_num=0
 	while True:
 		simplex_it_num += 1
-		print('[patt progress] start new simplex loop: ' +str(simplex_it_num))
+		#print('[patt progress] start new simplex loop: ' +str(simplex_it_num))
 
 
 		# sort the simplex coordinates in an increasing order of performance costs

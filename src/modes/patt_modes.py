@@ -1,21 +1,12 @@
 #!/usr/bin/env python
 
-# /******************************************************************
-# PATT: Polyhedral compilation-based AuTo Tile size optimizer
-#
-# Copyright (C)   2017-2018,   Yukinori Sato
-# All Rights Reserved. 
-# University of Illinois/NCSA Open Source License
-# ******************************************************************/
-
-
 from util.util import *
 import math
 import sys
 import os
 
 def product_recur(info, patt_util, exp_list, exp_all_list, para, count, pass_flag):
-	print('[patt progress] product_recur start')
+	#print('[patt progress] product_recur start')
 	pf = pass_flag #True: do pass == don't try
 	fastest_time = patt_util['huge_num']
 	fastest_para = 0
@@ -87,7 +78,7 @@ def product_recur(info, patt_util, exp_list, exp_all_list, para, count, pass_fla
 
 
 def iterative_search(info, patt_util, width_list, depth, prev_eval, finest_flags):
-	print('[patt progress] iterative_search start (depth:' + str(depth) + ')')
+	#print('[patt progress] iterative_search start (depth:' + str(depth) + ')')
 	end_flag = True
 	grain = int(info['grain'])
 

@@ -162,7 +162,7 @@ def orio_sa_mode(info):
 	print('init_coord perf_cost: ' +str(perf_cost))
 
 	#the sa loop
-	print('[patt progress] sa loop start')
+	#print('[patt progress] sa loop start')
 	temp = init_temp
 	while temp > final_temp:
 		#the trial loop (i.e. the Metropolis Monte Carlo simulation loop)

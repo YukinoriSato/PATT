@@ -1,18 +1,9 @@
 #!/usr/bin/env python
 
-# /******************************************************************
-# PATT: Polyhedral compilation-based AuTo Tile size optimizer
-#
-# Copyright (C)   2017-2018,   Yukinori Sato
-# All Rights Reserved. 
-# University of Illinois/NCSA Open Source License
-# ******************************************************************/
-
 #This script is for python2, llvm4.0
 #patt.py v3.0.6
 #2017/10/25(yyyy/mm/dd)
 #written by T.Y
-
 
 # for i-PATT
 grain=8
@@ -99,7 +90,7 @@ def parse(argv):
 
 def patt(argv):
         tm_init()
-	print('[patt progress] patt start')
+	#print('[patt progress] patt start')
 
 
 	if os.path.exists('patt_result'):
@@ -119,7 +110,7 @@ def patt(argv):
 	eval(info['mode'] + '_mode')(info)
 
 
-	print('[patt progress] patt end')
+	#print('[patt progress] patt end')
         tm_print()
 
 if __name__ == '__main__':
