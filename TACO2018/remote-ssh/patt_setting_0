@@ -1,0 +1,32 @@
+threads=64
+remote=lyon3
+repetition=3
+
+# for i-PATT
+grain=8
+depth=100
+grain_cut=True
+depth_cut=False
+
+# for both of Nelder-Mead and SA
+loop_1=range(4,1000,4)
+loop_2=range(4,1200,4)
+loop_3=range(4,1100,4)
+init_coord=[7,7,7]
+
+# for Nelder-Mead
+reflection_coefs=[1.0]
+expansion_coefs=[2.0]
+contraction_coefs=[0.5]
+shrinkage_coef=0.5
+
+# for Simulated annealing
+local_distance=0
+neigbor_distance=1
+cooling_factor=0.95
+final_temp_ratio=0.005
+
+# for exhaustive search
+
+
+
